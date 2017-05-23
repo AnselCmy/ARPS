@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Users List</title>
+	</head>
+	{% for report in reports %}
+	<body>
+		<p>{{ report.title }}</p>
+		<p>{{ report.address }}</p>
+		<p>{{ report.time }}</p>
+		<p>{{ report.content }}</p>
+		<hr>
+	</body>
+	{% endfor %}
+</html>
