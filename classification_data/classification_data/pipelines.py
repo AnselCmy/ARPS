@@ -4,8 +4,8 @@ import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-title_name = 'title.txt'
-filename = '人工智能、机器学习与模式识别.txt'
+title_name = '计算机应用_title.txt'
+filename = '计算机应用.txt'
 class ClassificationDataPipeline(object):
     def process_item(self, item, spider):
         if not item.has_key('title'):

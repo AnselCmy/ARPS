@@ -7,7 +7,12 @@ sys.setdefaultencoding('utf-8')
 import scrapy
 from function import get_title
 
-key_word = '计算机视觉'
+# 算法与数据结构
+# 并行计算与分布式
+# 软件工程
+# 数据库技术
+# 计算机应用
+key_word = '计算机应用'
 start_year, end_year = 2015, 2017
 all_name = get_title()
 # all_name = []
