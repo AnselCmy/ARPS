@@ -9,7 +9,7 @@ file_origin = open('train_neg.txt', 'r')
 lines += file_origin.readlines()
 file_origin.close()
 
-random.shuffle(lines)
+random.shuffle(lilnes)
 
 train_str = ''
 test_str = ''
