@@ -9,7 +9,7 @@ db = conn.get_database('report_db')
 @app.route('/<string:school>')
 def report_by_school(school = None):
 	school = school.upper()
-	reports = db.col20170523.find({'school':school})
+	reports = db.col20170524.find({'school':school})
 	return render_template('report_by_school.html', reports = reports)
 
 @app.route('/')

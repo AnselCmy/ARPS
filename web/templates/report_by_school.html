@@ -1,15 +1,68 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Users List</title>
-	</head>
-	{% for report in reports %}
-	<body>
-		<p>{{ report.title }}</p>
-		<p>{{ report.address }}</p>
-		<p>{{ report.time }}</p>
-		<p>{{ report.content }}</p>
-		<hr>
-	</body>
-	{% endfor %}
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>The Reports From Some Schools</title>
+      <link rel="stylesheet" href="static/theme1/style.css">
+    </head>
+    <body>
+      <h1></h1>
+      <div class="index">
+          <div class="index_part">
+              <div class="index_point">
+                  <a href="#piont1_1">CS <br></a>
+                  <a href="#point1_2">PL<br></a>
+                  <a href="#point1_3">EM</a>
+              </div>
+          </div>
+      </div>
+      <div class="part" id="part1">
+          <h2>HFUT</h2>
+          <div class="point" id="point1_1">
+              <div class="point_title">
+                  <h3>CS</h3>
+              </div>
+              <div class="point_description">
+              		{% for report in reports %}
+						<p>{{ report.title }}</p>
+						<p>{{ report.address }}</p>
+						<p>{{ report.time }}</p>
+						<p>{{ report.content }}</p>
+						<hr>
+					{% endfor %}
+              </div>
+          </div>
+          <div class="point" id="point1_2">
+              <div class="point_title">
+                  <h3>PL</h3>
+              </div>
+              <div class="point_description">
+					{% for report in reports %}
+						<p>{{ report.title }}</p>
+						<p>{{ report.address }}</p>
+						<p>{{ report.time }}</p>
+						<p>{{ report.content }}</p>
+						<hr>
+					{% endfor %}
+              </div>
+          </div>
+          <div class="point" id="point1_3">
+              <div class="point_title">
+                  <h3>EM</h3>
+              </div>
+              <div class="point_description">
+					{% for report in reports %}
+						<p>{{ report.title }}</p>
+						<p>{{ report.address }}</p>
+						<p>{{ report.time }}</p>
+						<p>{{ report.content }}</p>
+						<hr>
+					{% endfor %}
+              </div>
+          </div>
+      </div>>
+      <div class="more">
+          <b>If you want to get more information ,click <a href="http://xc.hfut.edu.cn/">here</a></b>
+      </div>
+    </body>
 </html>
