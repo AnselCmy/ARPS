@@ -1,1 +1,0 @@
-A crawler specialized in data acquisition.
