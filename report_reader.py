@@ -1,9 +1,12 @@
 import pymongo as pm
 
-def connectDB():
+def connectDB(DBname):
 	conn = pm.MongoClient('localhost', 27017)
-	db = conn.get_database('report_db')
+	db = conn.get_database(DBname)
 	return db
+
+def getCollection(db, Colname):
+	return db[Colname]
 
 def getColList(db):
 	return db.collection_names()
