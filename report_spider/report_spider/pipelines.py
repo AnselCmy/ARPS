@@ -3,6 +3,7 @@
 import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
+sys.path.append("..")
 
 import os
 import time
@@ -12,6 +13,8 @@ from settings import SAVEDIR
 from spiders.Global_function import get_localtime
 
 now_time = str(get_localtime(time.strftime("%Y-%m-%d", time.localtime())))
+# now_time = '20170425'
+
 class ReportSpiderPipeline(object):
     def process_item(self, item, spider):
         if item['title'] == '':

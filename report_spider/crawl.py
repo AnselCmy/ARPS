@@ -5,8 +5,8 @@ import traceback
 from report_spider.spiders.Global_function import get_localtime
 from report_spider.settings import SAVEDIR
 
-# now_time = get_localtime(time.strftime("%Y-%m-%d", time.localtime()))
-now_time = '20170510'
+now_time = get_localtime(time.strftime("%Y-%m-%d", time.localtime()))
+# now_time = '20170425'
 
 class Spider_starter(object):
 
