@@ -8,8 +8,8 @@ import time
 import scrapy
 from Global_function import get_localtime, print_new_number, save_messages
 
-# now_time = get_localtime(time.strftime("%Y-%m-%d", time.localtime()))
-now_time = 20170501
+now_time = 20170500
+end_time = get_localtime(time.strftime("%Y-%m-%d", time.localtime()))
 
 class SYSU001_Spider(scrapy.Spider):
 	name = 'SYSU001'
@@ -28,6 +28,8 @@ class SYSU001_Spider(scrapy.Spider):
 			report_url = self.domains + messages[i].xpath(".//a/@href").extract()[0][1:]
 			report_time = get_localtime(messages[i].xpath(".//span/text()").extract()[0].replace('/', '-'))
 
+			if report_time > end_time:
+				continue
 			if report_time < now_time:
 				return
 			yield scrapy.Request(report_url, callback=self.parse_pages, meta={'link': report_url, 'number': i + 1})
@@ -69,7 +71,7 @@ class SYSU001_Spider(scrapy.Spider):
 			print_new_number(self.counts, 'SYSU', self.name)
 
 		all_messages = save_messages('SYSU', self.name, title, time, address, speaker, person_introduce,
-		                             content, '', response.meta['link'], response.meta['number'], u'中山大学')
+		                             content, '', response.meta['link'], response.meta['number'], u'中山大学', u'数据科学与计算机学院')
 
 		return all_messages
 

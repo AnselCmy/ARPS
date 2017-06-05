@@ -12,11 +12,12 @@ class Spider_starter(object):
 
     def crawl(self):
         # running the spider
-        self.HFUT()
+        # self.HFUT()
         self.USTC()
         self.SYSU()
         self.WHU()
         self.THU()
+        self.NPU()
 
     def run_spider(self, spider_name):
         dirname = SAVEDIR + '/' + str(now_time) + '/' + spider_name[0:len(spider_name)-3] + '/' + spider_name
@@ -32,6 +33,9 @@ class Spider_starter(object):
     def HFUT(self):
         # self.run_spider('HFUT000')
         pass
+
+    def NPU(self):
+        self.run_spider('NPU001')
 
     def USTC(self):
         self.run_spider('USTC001')

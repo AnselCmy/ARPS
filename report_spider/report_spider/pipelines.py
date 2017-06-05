@@ -29,8 +29,6 @@ class ReportSpiderPipeline(object):
         if item.has_key('img_url'):
             self.img_save(item['img_url'], filename)
         # text save
-        if item.has_key('address'):
-            item['address'] = item['school_name'] + '：' + item['address']
         self.text_save(item, filename)
         # save to database
         self.DB_save(item)
@@ -40,6 +38,10 @@ class ReportSpiderPipeline(object):
         filename += '.txt'
         # We only save six things: title, speaker, time, address, person_introduce, content
         with open(filename, 'w') as f:
+            # school
+            f.write('School:' + '\n' + all_messages['school_name'] + '\n' * 2)
+            # organizer
+            f.write('Organizer:' + '\n' + all_messages['organizer'] + '\n' * 2)
             # title must have
             f.write('Title:' + '\n' + all_messages['title'] + '\n' * 2)
             # others may not have
