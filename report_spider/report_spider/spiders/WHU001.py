@@ -8,8 +8,8 @@ import time
 import scrapy
 from Global_function import get_localtime, print_new_number, save_messages
 
-now_time = get_localtime(time.strftime("%Y-%m-%d", time.localtime()))
-now_time = 20170301
+now_time = 20170500
+end_time = get_localtime(time.strftime("%Y-%m-%d", time.localtime()))
 
 class WHU001_Spider(scrapy.Spider):
 	name = 'WHU001'
@@ -24,6 +24,8 @@ class WHU001_Spider(scrapy.Spider):
 		for i in xrange(len(messages)):
 			report_url = self.domain + messages[i].xpath(".//a/@href").extract()[0][1:]
 			report_time = get_localtime(messages[i].xpath(".//i/text()").extract()[0].split(' ')[0])
+			if report_time > end_time:
+				continue
 			if report_time < now_time:
 				return
 			yield scrapy.Request(report_url, callback=self.parse_pages, meta={'link': report_url, 'number': i + 1})

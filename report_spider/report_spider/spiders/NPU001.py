@@ -10,8 +10,8 @@ import scrapy
 from Global_function import get_localtime, print_new_number, save_messages
 
 now_time = get_localtime(time.strftime("%Y-%m-%d", time.localtime()))
-now_time = 20100101
-end_time = 20170101
+now_time = 20170500
+end_time = get_localtime(time.strftime("%Y-%m-%d", time.localtime()))
 
 class NPU001_Spider(scrapy.Spider):
 	name = 'NPU001'

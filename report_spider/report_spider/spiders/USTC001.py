@@ -8,8 +8,8 @@ import time
 import scrapy
 from Global_function import get_localtime, print_new_number, save_messages
 
-now_time = get_localtime(time.strftime("%Y-%m-%d", time.localtime()))
-# now_time = 20170419
+now_time = 20170500
+end_time = get_localtime(time.strftime("%Y-%m-%d", time.localtime()))
 
 class USTC001_Spider(scrapy.Spider):
 	name = 'USTC001'
@@ -27,6 +27,8 @@ class USTC001_Spider(scrapy.Spider):
 			report_url = self.domain + links[i][2:]
 			report_time = get_localtime(times[i])
 
+			if report_time > end_time:
+				continue
 			if report_time < now_time:
 				return
 			yield scrapy.Request(report_url, callback=self.parse_pages, meta={'link': report_url, 'number': i + 1})
