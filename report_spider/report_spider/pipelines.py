@@ -66,5 +66,6 @@ class ReportSpiderPipeline(object):
     def DB_save(self, all_messages):
         conn = pm.MongoClient('localhost', 27017)
         db = conn.get_database('report_db')
-        col = db.get_collection('col' + now_time)
+        # col = db.get_collection('col' + now_time)
+        col = db.get_collection('reports_without_label')
         col.insert(all_messages)

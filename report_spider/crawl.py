@@ -30,24 +30,25 @@ class Spider_starter(object):
             traceback.print_exc()
 
     def HFUT(self):
-        self.run_spider('HFUT000')
+        # self.run_spider('HFUT000')
+        pass
 
     def USTC(self):
         self.run_spider('USTC001')
-        self.run_spider('USTC002')
-        self.run_spider('USTC003')
-        self.run_spider('USTC004')
-        self.run_spider('USTC005')
-        self.run_spider('USTC006')
+        # self.run_spider('USTC002')
+        # self.run_spider('USTC003')
+        # self.run_spider('USTC004')
+        # self.run_spider('USTC005')
+        # self.run_spider('USTC006')
 
     def SYSU(self):
         self.run_spider('SYSU001')
     
     def THU(self):
         self.run_spider('THU001')
-        self.run_spider('THU002')
-        self.run_spider('THU003')
-        self.run_spider('THU007')
+        # self.run_spider('THU002')
+        # self.run_spider('THU003')
+        # self.run_spider('THU007')
 
     def WHU(self):
         self.run_spider('WHU001')
