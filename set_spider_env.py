@@ -1,9 +1,9 @@
-#!/use/bin/env python3
+#!/usr/bin/env python3
 import os, sys
 
 spider_name = sys.argv[1]
 
-os.system('mv {0} {0}_temp'.format(spider_name))
+os.system('sudo mv {0} {0}_temp'.format(spider_name))
 os.system('scrapy startproject {}'.format(spider_name))
 
 for f in os.listdir('./{}_temp'.format(spider_name)):

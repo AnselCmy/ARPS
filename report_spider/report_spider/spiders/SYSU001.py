@@ -8,8 +8,8 @@ import time
 import scrapy
 from Global_function import get_localtime, print_new_number, save_messages
 
-now_time = 20170500
-end_time = get_localtime(time.strftime("%Y-%m-%d", time.localtime()))
+now_time = 20170100
+end_time = 20170500
 
 class SYSU001_Spider(scrapy.Spider):
 	name = 'SYSU001'
