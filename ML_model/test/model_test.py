@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import print_function
+import sys
+sys.path.append('..')
 from model.main import Multi_Label_Model
 
 model = Multi_Label_Model()
@@ -17,6 +19,6 @@ model.load_scaler('model/scaler.txt')
 model.load_model('model')
 a = model.predict_class_with_string([u'一种微阵列数据降维新方法', u'基于网络自有信号的网络线缆故障的检测方法研究'], labels)
 for each in a:
-    print(each)
+    print(each[0])
 
 
