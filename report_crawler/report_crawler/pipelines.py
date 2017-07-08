@@ -59,3 +59,5 @@ class ReportCrawlerPipeline(object):
             text += '\n'
         with open('WHU001/{}.txt'.format(item['number']), 'w') as f:
             f.write(str(text))
+
+    

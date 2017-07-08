@@ -2,6 +2,8 @@
 from __future__ import unicode_literals, print_function, division
 
 import os
+import sys
+sys.path.append('..')
 from six import string_types
 
 import jieba
