@@ -31,18 +31,22 @@ class ReportCrawlerPipeline(object):
 
         if messages['title'] is None or messages['time'] is None or messages['address'] is None or messages['speaker'] is None:
             return
-
         dirname = os.path.join(SAVEDIR, now_time, item['faculty'][-3:], item['faculty'][:-3])
         if not os.path.exists(dirname):
             os.makedirs(dirname)
         filename = os.path.join(dirname, '{}.txt'.format(item['number']))
+
+        # send the information from item to messages
+        messages['faculty'] = item['faculty']
+        messages['organizer'] = item['organizer']
+        messages['link'] = item['link']
 
         with open(filename, 'w') as f:
             f.write('Title：\n' + messages['title'] + '\n' * 2)
             f.write('Time：\n' + messages['time'] + '\n' * 2)
             f.write('Address：\n' + messages['address'] + '\n' * 2)
             f.write('Speaker：\n' + messages['speaker'] + '\n' * 2)
-            f.write('Organizer：\n' + item['organizer'] + '\n' * 2)
+            f.write('Organizer：\n' + messages['organizer'] + '\n' * 2)
 
             if messages['biography'] is not None:
                 f.write('Biography：\n' + messages['biography'] + '\n' * 2)
