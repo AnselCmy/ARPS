@@ -3,9 +3,15 @@ import time
 import scrapy
 from Global_function import get_localtime
 
+<<<<<<< HEAD
 # now_time = get_localtime(time.strftime("%Y-%m-%d", time.localtime()))
 now_time = 20170101
 end_time = 20990807
+=======
+now_time = get_localtime(time.strftime("%Y-%m-%d", time.localtime()))
+# now_time = 20170301
+end_time = 20991212
+>>>>>>> LJY
 
 class WHU001_Spider(scrapy.Spider):
     name = 'WHU001'
@@ -16,17 +22,18 @@ class WHU001_Spider(scrapy.Spider):
     def parse(self, response):
         messages = response.xpath("//div[@id='container']/dl/dd")
 
-        for i in xrange(len(messages)):
-            report_url = self.domain + messages[i].xpath(".//a/@href").extract()[0][1:]
-            report_time = get_localtime(messages[i].xpath(".//i/text()").extract()[0].split(' ')[0])
+		for i in xrange(len(messages)):
+			report_url = self.domain + messages[i].xpath(".//a/@href").extract()[0][1:]
+			report_time = get_localtime(messages[i].xpath(".//i/text()").extract()[0].split(' ')[0])
 
-            if report_time > end_time:
-                continue
-            if report_time < now_time:
-                return
-            yield scrapy.Request(report_url, callback=self.parse_pages, meta={'link': report_url, 'number': i + 1})
+			if report_time > end_time:
+				continue
+			if report_time < now_time:
+				return
+			yield scrapy.Request(report_url, callback=self.parse_pages, meta={'link': report_url, 'number': i + 1})
 
-    def parse_pages(self, response):
-        messages = response.xpath("//dd[@class='info']")
+	def parse_pages(self, response):
+		messages = response.xpath("//dd[@class='info']")
 
-        return {'text': messages, 'number': response.meta['number'], 'organizer': u'武汉大学计算机学院', 'faculty': self.name}
+		return {'text': messages, 'number': response.meta['number'], 'organizer': u'武汉大学计算机学院',
+		        'faculty': self.name, 'link': response.meta['link']}

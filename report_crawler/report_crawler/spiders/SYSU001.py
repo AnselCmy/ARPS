@@ -3,8 +3,13 @@ import time
 import scrapy
 from Global_function import get_localtime
 
+<<<<<<< HEAD
 # now_time = get_localtime(time.strftime("%Y-%m-%d", time.localtime()))
 now_time = 20170101
+=======
+now_time = get_localtime(time.strftime("%Y-%m-%d", time.localtime()))
+# now_time = 20170101
+>>>>>>> LJY
 end_time = 20991212
 
 
@@ -30,4 +35,5 @@ class SYSU001_Spider(scrapy.Spider):
 	def parse_pages(self, response):
 		messages = response.xpath("//div[@class='field-items']")
 
-		return {'text': messages, 'number': response.meta['number'], 'organizer': u'中山大学计算机学院', 'faculty': self.name}
+		return {'text': messages, 'number': response.meta['number'], 'organizer': u'中山大学计算机学院',
+		        'faculty': self.name, 'link': response.meta['link']}
