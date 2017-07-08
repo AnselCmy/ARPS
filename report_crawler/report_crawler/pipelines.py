@@ -11,6 +11,7 @@ sys.setdefaultencoding('utf-8')
 
 import os
 import time
+import pymongo as pm
 from spiders.Global_function import get_localtime
 from parser.parser import get_information
 
@@ -31,7 +32,6 @@ class ReportCrawlerPipeline(object):
 
         if messages['title'] is None or messages['time'] is None or messages['address'] is None or messages['speaker'] is None:
             return
-
         dirname = os.path.join(SAVEDIR, now_time, item['faculty'][-3:], item['faculty'][:-3])
         if not os.path.exists(dirname):
             os.makedirs(dirname)
@@ -48,16 +48,24 @@ class ReportCrawlerPipeline(object):
                 f.write('Biography：\n' + messages['biography'] + '\n' * 2)
             if messages['abstract'] is not None:
                 f.write('Abstract：\n' + messages['abstract'] + '\n' * 2)
+            
+        self.db_save(messages, item)
 
-        return
+        return messages
 
-    def deal_with(self, item):
-        text = ''
-        for message in item['text']:
-            for each in message.xpath(".//text()").extract():
-                text += each
-            text += '\n'
-        with open('WHU001/{}.txt'.format(item['number']), 'w') as f:
-            f.write(str(text))
-
-    
+    # def deal_with(self, item):
+    #     text = ''
+    #     for message in item['text']:
+    #         for each in message.xpath(".//text()").extract():
+    #             text += each
+    #         text += '\n'
+    #     with open('WHU001/{}.txt'.format(item['number']), 'w') as f:
+    #         f.write(str(text))
+            
+    def db_save(self, messages, item):
+        conn = pm.MongoClient('localhost', 27017)
+        db = conn.get_database('report_db')
+        col = db.get_collection('reports_without_label')
+        doc = messages.copy()
+        doc.update({'faculty': item['faculty'], 'organizer': item['organizer']})
+        col.insert(doc)

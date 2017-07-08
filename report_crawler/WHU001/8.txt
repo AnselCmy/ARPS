@@ -1,0 +1,26 @@
+      
+p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000}
+p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000; min-height: 14.0px}
+span.s1 {font-kerning: none}
+
+讲座题目：Recent advances in image denoising: application to DTI data
+ 
+主讲人：YueMin Zhu 教授(法国国家应用科学院)
+ 
+主持人：吕岳 教授
+ 
+开始时间：2017-03-29 上午10:30
+ 
+讲座地址：理科大楼B1002
+ 
+ 
+ 
+主讲人简介：
+ 
+YueMin Zhu(朱跃敏)， 法国国家应用科学院教授、博士生导师，法国家科学研究中心终身员，是磁共振成像、三维图重构医学降噪分割融合显示领域的权威专家。主持包括欧盟和法国ANR 科研项目40多项。他在活体磁共振扩散张量成像 (in-vivo cardiac DT-MRI) 进行了一系列开拓性的研究工作，取得项突破性成果。 首次在世界上获得临床数据采集条件下活体人磁共振扩散张量成像。共发表学术论文 270 余篇，包括国际顶级杂志(IEEE TIP, TMI, (IEEE TIP, TMI, TBME, IEEE TNS, TIM, Medical Image Analysis, SIAM J. Imaging Sci., MRM, JMRI, etc.) TBME, IEEE TNS, TIM, Medical Image Analysis, SIAM J. Imaging Sci., MRM, JMRI, etc.) 及国际主流会议(IPMI, MICCAI, ICIP, ICASSP, EUSIPCO)。
+ 
+ 
+ 
+报告内容：
+ 
+Among recently appeared medical imaging techniques, diffusion tensor magnetic resonance imaging (DTI) has received particularly intensive attention of researchers and clinical doctors. DTI has emerged as a new and promising technique for investigating the 3D fiber structures of brain and heart tissues. A weak point of DTI is however its relatively low signal-to-noise ratio (SNR) due to the difficult dilemma between acquisition time and image quality. This presentation attempts to present a recent method for denoising diffusion weighted images in DTI. Different aspects, from mathematical formulation to final adaptive filtering, will be dealt with.
