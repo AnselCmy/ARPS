@@ -9,6 +9,7 @@ import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
+import re
 import os
 import time
 import pymongo as pm
@@ -32,6 +33,11 @@ class ReportCrawlerPipeline(object):
 
         if messages['title'] is None or messages['time'] is None or messages['address'] is None or messages['speaker'] is None:
             return
+        
+        if re.sub(u"\\s+", '', messages['title']) == '' or re.sub(u"\\s+", '', messages['time']) == '' or \
+                        re.sub(u"\\s+", '', messages['address']) == '' or re.sub(u"\\s+", '', messages['speaker']) == '':
+            return
+        
         dirname = os.path.join(SAVEDIR, now_time, item['faculty'][-3:], item['faculty'][:-3])
         if not os.path.exists(dirname):
             os.makedirs(dirname)
@@ -54,9 +60,10 @@ class ReportCrawlerPipeline(object):
             if messages['abstract'] is not None:
                 f.write('Abstract：\n' + messages['abstract'] + '\n' * 2)
             
-        self.db_save(messages, item)
-
-        return messages
+        self.db_save(messages)
+        self.write_log(messages)
+    
+        return
 
     # def deal_with(self, item):
     #     text = ''
@@ -67,10 +74,13 @@ class ReportCrawlerPipeline(object):
     #     with open('WHU001/{}.txt'.format(item['number']), 'w') as f:
     #         f.write(str(text))
             
-    def db_save(self, messages, item):
+    def db_save(self, messages):
         conn = pm.MongoClient('localhost', 27017)
         db = conn.get_database('report_db')
         col = db.get_collection('reports_without_label')
-        doc = messages.copy()
-        doc.update({'faculty': item['faculty'], 'organizer': item['organizer']})
-        col.insert(doc)
+        col.insert(messages)
+        
+    def write_log(self, messages):
+        f = open('../log.txt', 'a+')
+        f.writelines(messages['organizer'] + ', ' + messages['title'] + '\n')
+        f.close()

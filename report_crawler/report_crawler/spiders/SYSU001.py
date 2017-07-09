@@ -3,13 +3,8 @@ import time
 import scrapy
 from Global_function import get_localtime
 
-<<<<<<< HEAD
 # now_time = get_localtime(time.strftime("%Y-%m-%d", time.localtime()))
 now_time = 20170101
-=======
-now_time = get_localtime(time.strftime("%Y-%m-%d", time.localtime()))
-# now_time = 20170101
->>>>>>> LJY
 end_time = 20991212
 
 
