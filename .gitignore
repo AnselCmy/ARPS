@@ -1,6 +1,9 @@
 # For .DS_Store in macOS
 *.DS_Store
 
+# For jetbrain
+*.idea/
+
 #For jetbrain
 *.idea/
 
