@@ -1,7 +1,19 @@
-报告题目: Inside the Atoms: Mining a Network of Networks and Beyond
-时间：2017年6月28日 10:30-11:30
-地点：理科大楼1002B
-报告人：童行行 博士
-主持人: 孙仕亮
-摘要: Networks (i.e., graphs) appears in many high-impact applications. Often these networks are collected from different sources, at different times, at different granularities. In this talk, I will present our recent work on mining such multiple networks. First, we will present two models - one on modeling a set of inter-connected networks (NoN); and the other on modeling a set of inter-connected co-evolving time series (NoT). For both models, we will show that by treating networks as context, we are able to model more complicate real-world applications. Second, we will present some algorithmic examples on how to do mining with such new models, including ranking, imputation and prediction. Finally, we will demonstrate the effectiveness of our new models and algorithms in some applications, including bioinformatics, and sensor networks.
-报告人简介: Hanghang Tong is currently an assistant professor at School of Computing, Informatics, and Decision Systems Engineering (CIDSE), Arizona State University since August 2014.  Before that, he was an assistant professor at Computer Science Department, City College, City University of New York, a research staff member at IBM T.J. Watson Research Center and a Post-doctoral fellow in Carnegie Mellon University. He received his M.Sc and Ph.D. degree from Carnegie Mellon University in 2008 and 2009, both majored in Machine Learning. His research interest is in large scale data mining for graphs and multimedia. He has received several awards, including one ‘test of time’ award (ICDM 10-Year highest impact paper award), NSF CAREER award (2017), four best paper awards, five ‘best of conference’ and a best demo honorable mention (SIGMOD 2017). He has published over 100 referred articles and more than 20 patents.
+
+					
+
+					  本次活动特别邀请来自南京大学计算机系李宇峰副研究员，与我校师生分享他在机器学习领域的研究心得。具体安排如下，欢迎感兴趣的师生参加： 
+　　一、时间：2017年7月7日（周五）9:30 
+　　二、地点：主楼B1-104 
+　　三、主题：鲁棒利用未标记数据 
+　　四、主讲人：李宇峰博士（南京大学计算机系副研究员） 
+  五、主持人：国家“青年千人”计划入选者 徐增林教授 
+ 　七、交流内容： 
+   利用未标记数据提高性能是机器学习的一个重要问题。然而，近年研究结果指出，未标记数据的利用有时会导致性能下降。鲁棒利用未标记数据，防止性能下降成为了一个难点。本报告将就性能下降的原因（如求解质量不高、模型选择困难等）介绍一些应对的鲁棒学习技术。 
+  八、主讲人简介： 
+   李宇峰，博士，南京大学计算机系副研究员。他的主要研究兴趣是机器学习和数据挖掘，在JMLR、TPAMI、ICML、NIPS、IJCAI等机器学习期刊会议发表论文多篇。应邀担任IJCAI17/15高级程序委员，以及ICML、NIPS、 KDD等会议的程序委员。他获得了CCF优博、江苏省优博、入选CCF青年人才发展计划等荣誉。　　　　　　　　　　　　　　　　　　　　 
+  
+  
+  
+                计算机科学与工程学院、统计机器智能与学习实验室(SMILE Lab) 
+　　　　　　　　　　　　　　　　　　　　　　2017年7月6日
+				

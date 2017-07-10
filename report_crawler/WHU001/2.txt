@@ -1,7 +1,15 @@
-报告题目: Learning from Data Heterogeneity: Algorithms and Applications
-时间：2017年6月28日 9:30-10:30
-地点：理科大楼1002B
-报告人：何京芮 博士
-主持人: 赵静
-摘要: Data heterogeneity is common across many high-impact real applications, ranging from security to manufacturing, from healthcare to traffic analytics, and it is closely related to the 'Variety' aspect of big data. Such heterogeneity can be presented in a variety of forms, including task heterogeneity, where multiple related tasks may form a hierarchical structure; view heterogeneity, where information is being collected from various sources; instance heterogeneity, where the label of a single example can be decomposed into a set of heterogeneous labels associated with composing instances; etc. In this talk, I will introduce how we model data heterogeneity from a holistic perspective. In particular, I will hinge on multiple applications, discuss the major challenges being shared by these applications that are related to data heterogeneity, and introduce our proposed techniques for addressing these challenges.
-报告人简介: Jingrui He is an assistant professor in the School of Computing, Informatics and Decision Systems Engineering at Arizona State University. She received her PhD in Computer Science from Carnegie Mellon University. She joined ASU in 2014 and directs the Statistical Learning Lab (STAR Lab). Her research focuses on heterogeneous machine learning, rare category analysis, active learning and semi-supervised learning, with applications in social network analysis, healthcare, and manufacturing. She is the recipient of the 2016 NSF CAREER Award, and 2 times recipient of the IBM Faculty Award in 2015 and 2014 respectively. Dr. He is selected as IJCAI 2017 Early Career Spotlight. She has published more than 60 refereed articles, and is the author of the book on Analysis of Rare Categories (Springer-Verlag, 2011). Her papers have been selected as Bests of the Conference by ICDM 2016, ICDM 2010, and SDM 2010.
+
+					
+
+					一、主题：Performance Assessment of High-dimensional Variable Identification 
+二、时间：2017年7月6日上午10：20～11：20 
+三、主讲人：杨宇红 University of Minnesota,Twin Cities  IMS Fellow 
+四、地点：主楼B1-501 
+五、主持人：杨国武教授
+七、主讲人简介：
+杨宇红，耶鲁大学统计学博士，现为明尼苏达大学双城分校教授，IMS Fellow。
+在统计学领域开展研究，在中科院JCR分区的一区期刊和CCF A类期刊上共发表论文20篇以上，各类统计、信息论、计量经济、预测领域顶尖期刊发表学术论文50多篇。据Google Scholar统计，候选人的学术期刊论文，共被他人引用超过3000多次。2010年被评为国际统计学会会士（IMS Fellow）。
+六、内容简介： 
+One important task in statistical/machine learning is to identify the most important variables that influence the response of interest. Examples include the identification of biomarkers of a disease in medical research and choice of behavioral characteristic variables of customers for effective advertisement. Since such variable selection process is ubiquitous in data analysis, reproducibility of the statistical results demands a serious evaluation of reliability of the employed model selection method, no matter what label it may have in terms of good properties. In this work, we propose an estimation method for $F-$ and $G$-measures and prove their desirable properties of uniform consistency. This gives the data analyst a valuable tool to compare different variable selection methods based on the data at hand. Extensive simulations are conducted to show the very good finite sample performance of our approach. We further demonstrate the application of our methods using several micro-array gene expression data sets.The work is joint with Yanjia Yu and Yi Yang. 
+
+				

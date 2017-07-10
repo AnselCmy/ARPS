@@ -1,9 +1,17 @@
-报告题目：Large Scale Image Analysis for Computational Biology
-报告人：Auguste Genovesio, PhD，法国巴黎高师
-主持人：江振然
-报告时间：2016年9月27日上午10:00-11:00
-报告地点：中北校区理科大楼B714报告厅
-报告内容：
-Abstract: During the last 15 years automated image analysis has invaded research in cell biology in such a way that it now has become fully part of it. In this talk, we will visit a few example of image analysis approaches we designed to address computational biology challenges. We will describe a multi target tracking algorithm we developed to study the HIV virus dynamic during infection. We will also show how the miniaturization of samples and the full automation of their analysis led to process half million cell based conditions in parallel to discover therapeutic targets or decipher the mechanism of action of a drug. We will also show that both approaches can be combine to operate tracking on a large number of miniaturized experiment. Then we will describe an approach we are developing to make possible analysis of irregular tissue samples.
-报告人简介：
-Auguste Genovesio leads the Scientific Center for Computational Biology at the Institute of Biology of Ecole Normale Superieure (IBENS). After a PhD conducted at the Pasteur Institute, he has led research effort in South Korea (Institute Pasteur Korea), in the USA (Broad Institute of MIT and Harvard) and now in France (IBENS). Auguste Genovesio has a background in mathematics and computer science and he is specialized in image analysis and large-scale data analysis. He has spent the last 15 years developing this type of method to quantify or demonstrate biological phenomena and actively participated in the development of high-content screening technologies. He is author of 6 patents (therapeutic targets for HIV, Anti tubercular compound and computational methods) and 55 scientific papers (in journals such as Nature, Nature methods and IEEE transaction on image processing).
+
+					
+
+					一、主题： ① Integrating Social Links into Vehicular Ad Hoc Networks (VANETs): Social-aware, Secure and Privacy-Preserving Data Forwarding in VANETs ② Efficient and Privacy-preserving Smart Grid Downlink Communication Using Identity Based Signcryption 
+二、时间：2017年 6 月 9 日 上午10:00-12:00，13:30-15:30 
+三、主讲人：Xiaodong Lin 加拿大安大略理工大学 
+四、地点：主楼 B1-501 
+五、主持人：李洪伟教授 
+六、内容简介： 
+ ① Integrating Social Links into Vehicular Ad Hoc Networks (VANETs): Social-aware, Secure and Privacy-Preserving Data Forwarding in VANETs 
+In this talk, we first identify some security and privacy challenges in VANETs. Then, we look into how to integrate social links into VANETs. Specifically, we study social behavior and interaction in VANETs and then propose a social-aware, secure and privacy-preserving packet forwarding scheme. With the proposed scheme, Roadside Units (RSUs) deployed along the roadside can assist in packet forwarding to achieve highly reliable transmissions, which is considered critical for many vehicle applications. 
+② Efficient and Privacy-preserving Smart Grid Downlink Communication Using Identity Based Signcryption 
+In this talk, we will discuss security and privacy issues in Smart Grid. Then, we propose an efficient and privacy-preserving scheme for smart grid downlink communication. Specifically, we propose an efficient identity based signcryption, called EIBSC, providing privacy preservation in downlink communication for smart grids. The proposed scheme is characterized by employing the concealing destination technique on the tree-based network to protect consumer privacy in downlink communication. 
+七、主讲人简介： 
+Xiaodong Lin received the PhD degree in Information Engineering from Beijing University of Posts and Telecommunications, China, and the PhD degree (with Outstanding Achievement in Graduate Studies Award) in Electrical and Computer Engineering from the University of Waterloo, Canada. He is currently an Associate Professor with the Faculty of Business and Information Technology, University of Ontario Institute of Technology (UOIT), Canada. 
+His research interests include wireless communications and network security, computer forensics, software security, and applied cryptography. Dr. Lin serves as an Associate Editor for many international journals. He has served or is serving as a guest editor for many special issues of IEEE, Elsevier and Springer journals and as a symposium chair or track chair for IEEE/ACM conferences. He also served on many program committees. He currently serves as Chair of Communications and Information Security Technical Committee (CISTC) – IEEE Communications Society. He is a Fellow of the IEEE.
+				

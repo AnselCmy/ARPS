@@ -1,103 +1,19 @@
- 
 
-<!--
- /* Font Definitions */
-@font-face
-	{font-family:Arial;
-	panose-1:2 11 6 4 2 2 2 2 2 4;
-	mso-font-charset:0;
-	mso-generic-font-family:auto;
-	mso-font-pitch:variable;
-	mso-font-signature:-536859905 -1073711037 9 0 511 0;}
-@font-face
-	{font-family:宋体;
-	mso-font-charset:134;
-	mso-generic-font-family:auto;
-	mso-font-pitch:variable;
-	mso-font-signature:3 680460288 22 0 262145 0;}
-@font-face
-	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;
-	mso-font-charset:0;
-	mso-generic-font-family:auto;
-	mso-font-pitch:variable;
-	mso-font-signature:-536870145 1107305727 0 0 415 0;}
-@font-face
-	{font-family:"\@宋体";
-	mso-font-charset:134;
-	mso-generic-font-family:auto;
-	mso-font-pitch:variable;
-	mso-font-signature:3 680460288 22 0 262145 0;}
-@font-face
-	{font-family:等线;
-	mso-font-charset:134;
-	mso-generic-font-family:auto;
-	mso-font-pitch:variable;
-	mso-font-signature:-1610612033 953122042 22 0 262159 0;}
-@font-face
-	{font-family:"\@等线";
-	mso-font-charset:134;
-	mso-generic-font-family:auto;
-	mso-font-pitch:variable;
-	mso-font-signature:-1610612033 953122042 22 0 262159 0;}
- /* Style Definitions */
-p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{mso-style-unhide:no;
-	mso-style-qformat:yes;
-	mso-style-parent:"";
-	margin:0cm;
-	margin-bottom:.0001pt;
-	text-align:justify;
-	text-justify:inter-ideograph;
-	mso-pagination:none;
-	font-size:10.5pt;
-	mso-bidi-font-size:11.0pt;
-	font-family:等线;
-	mso-ascii-font-family:等线;
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:等线;
-	mso-fareast-theme-font:minor-fareast;
-	mso-hansi-font-family:等线;
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:minor-bidi;
-	mso-font-kerning:1.0pt;}
-.MsoChpDefault
-	{mso-style-type:export-only;
-	mso-default-props:yes;
-	font-size:10.5pt;
-	mso-ansi-font-size:10.5pt;
-	mso-bidi-font-size:11.0pt;
-	font-family:等线;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:minor-bidi;}
- /* Page Definitions */
-@page
-	{mso-page-border-surround-header:no;
-	mso-page-border-surround-footer:no;}
-@page WordSection1
-	{size:595.3pt 841.9pt;
-	margin:72.0pt 90.0pt 72.0pt 90.0pt;
-	mso-header-margin:42.55pt;
-	mso-footer-margin:49.6pt;
-	mso-paper-source:0;
-	layout-grid:15.6pt;}
-div.WordSection1
-	{page:WordSection1;}
--->
+					
 
-题目：面向视频识别的深度学习方法
-报告人：姜育刚 教授
-时间：2017年4月6日星期四下午1:30~2:30
-地点：理科大楼B座1002会议室
-主持人：孙仕亮
- 
-摘要：
-本报告主要介绍复旦大学视频大数据分析实验室近年来在网络视频分析领域的研究成果，涵盖了实验室在基于深度学习的视频分析算法设计、大规模视频数据集构建以及应用系统研发等方面完成的工作。
- 
-报告人简介：
-姜育刚，香港城市大学博士、美国哥伦比亚大学博士后，2011年通过复旦大学人才引进回国工作，现为计算机科学技术学院教授、博士生导师，上海市视频技术与系统工程研究中心副主任、视频大数据分析实验室主任。国家优秀青年科学基金获得者。当前的研究领域为多媒体信息检索、计算机视觉与深度学习，主要关注视频大数据内容识别与检索方法。至今在国际知名期刊和会议上发表论文百余篇。据Google Scholar，论文总被引用近5000次。目前主持国家自然科学基金、国家863计划、上海市科委、微软、华为、阿里巴巴等资助的多个研究课题。 
- 
-曾获ACM Multimedia最佳短文、IEEE Trans. on Multimedia Prize Paper Award Honorable Mention等优秀论文奖。2009年被美国IBM沃森研究中心选为"Emerging Leader in Multimedia"；2014年荣获首届ACM中国新星奖；2015年荣获ACM SIGMM Rising Star Award、教育部自然科学二等奖（第一完成人）、军队科技进步二等奖（第二完成人）。曾入选首届CCF-Intel青年学者提升计划、上海市浦江人才计划、上海市青年科技启明星计划、上海市青年拔尖人才计划，获"上海IT青年十大新锐"称号、上海市青年五四奖章等荣誉。 
- 
-曾任多个重要国际学术大会的组织委员会委员、程序委员会委员、领域主席等职，IEEE Trans. on Multimedia等期刊客座编委，欧洲MediaEval媒体分析评测组织者之一，2015年ACM多媒体检索大会程序委员会主席，THUMOS国际大规模动作识别比赛程序委员会主席。现任Springer期刊Machine Vision and Applications编委。
+					为加强与国外知名研究机构的学术交流，促进教师学术水平提升和研究生学术视野拓展，计算机学院定期邀请海内外知名学者来校讲座。 
+　　本次讲座邀请台湾中华大学许庆贤教授来校，探讨从系统的角度应对极限规模计算条件下的能源高效挑战，欢迎感兴趣的教师和博士生参加。具体安排如下： 
+　　一、主　题：Tackling Energy Efficient Challenges towards Extreme Scale Computing- The Systems Perspective 
+　　二、主讲人：台湾中华大学资讯工程系 许庆贤 教授 
+　　三、时　间：2017年6月20日（周二）10:00-12:00 
+　　四、地　点：清水河校区主楼B1-104 
+　　五、主持人：计算机学院 薛瑞尼 副教授 
+　　六、内容简介 
+  This talk attempts to address a few critical issues, trends and opportunities on high performance computing in the cloud and big data era. Prof. Hsu will assess impacts of cloud and big data ecosystems on the development of high performance computing systems. The cloud & big data ecosystem includes the hardware and software infrastructure, new computing architectures, data center sustainability, and service models applied in supporting the emerging Big Data Intelligence and Internet of Things (IoT). In particular, a few enabling technologies, such as NoSQL, parallel data processing, load balancing, data locality and virtualization will be addressed. 
+　　七、主讲人简介 
+  许庆贤，1973年出生于台湾，1999年取得博士学位，2002年加入台湾中华大学计算机学院，2010年获评教授。2011年至2013年受欧盟委员会与台湾科技部资助，先后在挪威University of Stavanger 与美国Virginia Tech. 任客座教授从事合作研究。  
+  在台湾中华大学期间担任并行与分布式计算实验室主任，博士生导师，资讯工程学系主任兼所长。主要从事并行与分布式计算、云计算与大数据，高性能计算，丛集计算等领域的研究工作。主持20余项科研项目，国际合作项目，累计科研经费约2千万人民币。 
+  发表IEEE/ACM 权威期刊论文18篇, JCR 1区论文36篇, JCR 2区论文30篇, 中国计算机学会(CCF)推荐国际A, B类期刊论文12篇，共计SCI论文90余篇，EI论文100篇以上，总计发表200余篇论文。近五年（2012-2016）学术成果被引用超过1300次。编著过分散式计算、物联网大数据、云端程式设计等书籍，十余本计算机领域的论文集，以及20余篇国际期刊专刊。在国际会议及欧美等知名大学特邀报告20余次。 
+  担任近十个国际顶尖期刊主编，副主编，包括IEEE Transactions on Services Computing (JCR 1区), IEEE Transactions on Cloud Computing, Computers and Electrical Engineering (JCR 2区), J. of Computational Science (JCR 2区)。 
+  自2009年，连续担任六届台湾云计算学会秘书长，理事，常务理事。目前担任IEEE云计算技术委员会(TCCLD)副主席。曾担任IEEE Cloud, IEEE Cluster, IEEE ISSRE, IEEE ICPADS, IEEE APSCC, IEEE UIC, IEEE CloudCom, IEEE DataCom等顶尖国际会议主席30余次。担任超过100个国际学术会议议程委员。2008年获选为IEEE高级会员。已指导超过60名博士与硕士生。
+				
