@@ -2,47 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="457fa548-914a-4b0a-be2d-15a1bd18e428" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/report_crawler/WHU001/14.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/report_crawler/WHU001/15.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/report_crawler/WHU001/16.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/report_crawler/WHU001/17.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/report_crawler/WHU001/18.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/report_crawler/report_crawler/parser/parser_001/PKU001.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/report_crawler/report_crawler/spiders/PKU001.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report_crawler/WHU001/1.txt" afterPath="$PROJECT_DIR$/report_crawler/WHU001/1.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report_crawler/WHU001/10.txt" afterPath="$PROJECT_DIR$/report_crawler/WHU001/10.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report_crawler/WHU001/11.txt" afterPath="$PROJECT_DIR$/report_crawler/WHU001/11.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report_crawler/WHU001/12.txt" afterPath="$PROJECT_DIR$/report_crawler/WHU001/12.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report_crawler/WHU001/13.txt" afterPath="$PROJECT_DIR$/report_crawler/WHU001/13.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report_crawler/WHU001/2.txt" afterPath="$PROJECT_DIR$/report_crawler/WHU001/2.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report_crawler/WHU001/3.txt" afterPath="$PROJECT_DIR$/report_crawler/WHU001/3.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report_crawler/WHU001/4.txt" afterPath="$PROJECT_DIR$/report_crawler/WHU001/4.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report_crawler/WHU001/5.txt" afterPath="$PROJECT_DIR$/report_crawler/WHU001/5.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report_crawler/WHU001/6.txt" afterPath="$PROJECT_DIR$/report_crawler/WHU001/6.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report_crawler/WHU001/7.txt" afterPath="$PROJECT_DIR$/report_crawler/WHU001/7.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report_crawler/WHU001/8.txt" afterPath="$PROJECT_DIR$/report_crawler/WHU001/8.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report_crawler/WHU001/9.txt" afterPath="$PROJECT_DIR$/report_crawler/WHU001/9.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report_crawler/WHU001/explore.py" afterPath="$PROJECT_DIR$/report_crawler/WHU001/explore.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report_crawler/crawler.py" afterPath="$PROJECT_DIR$/report_crawler/crawler.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report_crawler/department code.txt" afterPath="$PROJECT_DIR$/report_crawler/department code.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report_crawler/report_crawler/parser/parser.py" afterPath="$PROJECT_DIR$/report_crawler/report_crawler/parser/parser.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report_crawler/report_crawler/parser/parser_001/BNU001.py" afterPath="$PROJECT_DIR$/report_crawler/report_crawler/parser/parser_001/BNU001.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report_crawler/report_crawler/parser/parser_001/BUAA001.py" afterPath="$PROJECT_DIR$/report_crawler/report_crawler/parser/parser_001/BUAA001.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report_crawler/report_crawler/parser/parser_001/UESTC001.py" afterPath="$PROJECT_DIR$/report_crawler/report_crawler/parser/parser_001/UESTC001.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report_crawler/report_crawler/pipelines.py" afterPath="$PROJECT_DIR$/report_crawler/report_crawler/pipelines.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report_crawler/report_crawler/spiders/BNU001.py" afterPath="$PROJECT_DIR$/report_crawler/report_crawler/spiders/BNU001.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report_crawler/report_crawler/spiders/BUAA001.py" afterPath="$PROJECT_DIR$/report_crawler/report_crawler/spiders/BUAA001.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report_crawler/report_crawler/spiders/ECNU001.py" afterPath="$PROJECT_DIR$/report_crawler/report_crawler/spiders/ECNU001.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report_crawler/report_crawler/spiders/NWPU001.py" afterPath="$PROJECT_DIR$/report_crawler/report_crawler/spiders/NWPU001.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report_crawler/report_crawler/spiders/NWSUAF001.py" afterPath="$PROJECT_DIR$/report_crawler/report_crawler/spiders/NWSUAF001.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report_crawler/report_crawler/spiders/SCU001.py" afterPath="$PROJECT_DIR$/report_crawler/report_crawler/spiders/SCU001.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report_crawler/report_crawler/spiders/SDU001.py" afterPath="$PROJECT_DIR$/report_crawler/report_crawler/spiders/SDU001.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report_crawler/report_crawler/spiders/SYSU001.py" afterPath="$PROJECT_DIR$/report_crawler/report_crawler/spiders/SYSU001.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report_crawler/report_crawler/spiders/THU001.py" afterPath="$PROJECT_DIR$/report_crawler/report_crawler/spiders/THU001.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report_crawler/report_crawler/spiders/UESTC001.py" afterPath="$PROJECT_DIR$/report_crawler/report_crawler/spiders/UESTC001.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report_crawler/report_crawler/spiders/WHU001.py" afterPath="$PROJECT_DIR$/report_crawler/report_crawler/spiders/WHU001.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/report_crawler/report_crawler/spiders/_Global_variable.py" afterPath="$PROJECT_DIR$/report_crawler/report_crawler/spiders/_Global_variable.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -67,14 +28,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/report_crawler/report_crawler/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="420">
+              <caret line="21" column="36" lean-forward="false" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
               <folding>
                 <marker date="1499776330000" expanded="true" signature="3111:3188" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -83,7 +54,7 @@
         <entry file="file://$PROJECT_DIR$/report_crawler/report_crawler/spiders/_Global_variable.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -93,7 +64,7 @@
         <entry file="file://$PROJECT_DIR$/report_crawler/report_crawler/spiders/NWSUAF001.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="560">
-              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -114,6 +85,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/report_crawler/report_crawler/pipelines.py" root0="SKIP_INSPECTION" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -128,6 +102,7 @@
         <option value="$PROJECT_DIR$/report_crawler/report_crawler/spiders/NWPU001.py" />
         <option value="$PROJECT_DIR$/report_crawler/report_crawler/parser/parser.py" />
         <option value="$PROJECT_DIR$/report_crawler/report_crawler/pipelines.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -167,82 +142,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ARPS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ARPS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ARPS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="report_crawler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ARPS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ARPS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="report_crawler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="report_crawler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ARPS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ARPS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="report_crawler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="report_crawler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spiders" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ARPS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ARPS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="report_crawler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="report_crawler" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="parser" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -494,13 +393,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/report_crawler/report_crawler/parser/parser_001/THU001.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/report_crawler/report_crawler/spiders/HUST001.py" />
     <entry file="file://$PROJECT_DIR$/report_crawler/report_crawler/parser/parser_001/SYSU001.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -772,7 +664,7 @@
     <entry file="file://$PROJECT_DIR$/report_crawler/report_crawler/spiders/_Global_variable.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -780,7 +672,7 @@
     <entry file="file://$PROJECT_DIR$/report_crawler/report_crawler/spiders/NWSUAF001.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
-          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -806,11 +698,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/report_crawler/report_crawler/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="420">
+          <caret line="21" column="36" lean-forward="false" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
           <folding>
             <marker date="1499776330000" expanded="true" signature="3111:3188" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
