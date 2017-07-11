@@ -14,8 +14,9 @@ import os
 import time
 import logging
 import pymongo as pm
-from spiders._Global_function import get_localtime
 from parser.parser import get_information
+from spiders._Global_function import get_localtime
+from spiders._Global_variable import REPORT_SAVEDIR, LOGGING_SAVEDIR
 
 # Log config
 logger = logging.getLogger('Scrapy')
@@ -25,7 +26,6 @@ formatter = logging.Formatter('[%(asctime)s] - %(name)s - %(message)s')
 fh.setFormatter(formatter)
 logger.addHandler(fh)
 
-SAVEDIR = '/var/lib/spider_save'
 now_time = str(get_localtime(time.strftime("%Y-%m-%d", time.localtime())))
 
 
@@ -40,11 +40,15 @@ class ReportCrawlerPipeline(object):
             text += '\n'
         messages = get_information(text, item['faculty'])
 
+        # The title come from the item.
+        if item.has_key('title') and messages['title'] == '':
+            messages['title'] = item['title']
+
         if re.sub(u"\\s+", '', messages['title']) == '' or re.sub(u"\\s+", '', messages['time']) == '' or \
                     re.sub(u"\\s+", '', messages['address']) == '' or re.sub(u"\\s+", '', messages['speaker']) == '':
             return
 
-        dirname = os.path.join(SAVEDIR, now_time, item['faculty'][-3:], item['faculty'][:-3])
+        dirname = os.path.join(REPORT_SAVEDIR, now_time, item['faculty'][-3:], item['faculty'][:-3])
         if not os.path.exists(dirname):
             os.makedirs(dirname)
         filename = os.path.join(dirname, '{}.txt'.format(item['number']))
@@ -53,6 +57,7 @@ class ReportCrawlerPipeline(object):
         messages['faculty'] = item['faculty']
         messages['organizer'] = item['organizer']
         messages['link'] = item['link']
+        messages['publication'] = item['publication']
 
         with open(filename, 'w') as f:
             f.write('Title：\n' + messages['title'] + '\n' * 2)

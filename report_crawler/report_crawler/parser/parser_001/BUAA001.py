@@ -39,12 +39,12 @@ def Parser(text, sub_linefeed):
 		messages['speaker'] = ''
 
 	# abstract
-	abstract_pattern = re.compile(u"(?:(?:摘(?:.*?){0,1}要)|(?:内(?:.*?){0,1}容)|(?:Bio))[：:.]([\s\S]*)(?:(?:(?:报(?:.*?){0,1}告)|(?:主(?:.*?){0,1}讲)人)|(?:讲(?:.*?){0,1}者)|(?:Abstract))(?:.*?){0,1}[：:.]", re.S)
+	abstract_pattern = re.compile(u"(?:(?:摘(?:.*?){0,1}要)|(?:内(?:.*?){0,1}容)|(?:Abstract))[：:.]([\s\S]*)(?:(?:(?:报(?:.*?){0,1}告)|(?:主(?:.*?){0,1}讲)人)|(?:讲(?:.*?){0,1}者)|(?:Bio))(?:.*?){0,1}[：:.]", re.S)
 	messages['abstract'] = re.findall(abstract_pattern, text)
 	if len(messages['abstract']) == 1:
 		messages['abstract'] = sub_linefeed(messages['abstract'][0].strip())
 	else:
-		abstract_pattern = re.compile(u"(?:(?:摘(?:.*?){0,1}要)|(?:内(?:.*?){0,1}容)|(?:Bio))[：:.]([\s\S]*)", re.S)
+		abstract_pattern = re.compile(u"(?:(?:摘(?:.*?){0,1}要)|(?:内(?:.*?){0,1}容)|(?:Abstract))[：:.]([\s\S]*)", re.S)
 		messages['abstract'] = re.findall(abstract_pattern, text)
 		if len(messages['abstract']) == 1:
 			messages['abstract'] = sub_linefeed(messages['abstract'][0].strip())
@@ -52,12 +52,12 @@ def Parser(text, sub_linefeed):
 			messages['abstract'] = ''
 
 	# biography
-	biography_pattern = re.compile(u"(?:(?:者|人)(?:简(?:.*?){0,1}介|介(?:.*?){0,1}绍)|Abstract)[：:.]([\s\S]*)(?:(?:(?:报告)|(?:讲座))(?:(?:摘要)|(?:内容)|(?:简介))|Bio)[：:.]", re.S)
+	biography_pattern = re.compile(u"(?:(?:者|人)(?:简(?:.*?){0,1}介|介(?:.*?){0,1}绍)|Bio)[：:.]([\s\S]*)(?:(?:(?:报告)|(?:讲座))(?:(?:摘要)|(?:内容)|(?:简介))|Abstract)[：:.]", re.S)
 	messages['biography'] = re.findall(biography_pattern, text)
 	if len(messages['biography']) == 1:
 		messages['biography'] = sub_linefeed(messages['biography'][0].strip())
 	else:
-		biography_pattern = re.compile(u"(?:(?:者|人)(?:(?:简(?:.*?){0,1}介)|(?:介(?:.*?){0,1}绍))|Abstract)[：:.]([\s\S]*)", re.S)
+		biography_pattern = re.compile(u"(?:(?:者|人)(?:(?:简(?:.*?){0,1}介)|(?:介(?:.*?){0,1}绍))|Bio)[：:.]([\s\S]*)", re.S)
 		messages['biography'] = re.findall(biography_pattern, text)
 		if len(messages['biography']) == 1:
 			messages['biography'] = sub_linefeed(messages['biography'][0].strip())
