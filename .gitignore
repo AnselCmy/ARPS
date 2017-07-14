@@ -101,3 +101,18 @@ ENV/
 
 # mkdocs documentation
 /site
+model/
+report_crawler/WHU001/
+title_model/
+tmsvm/dependence/.svn/props/
+tmsvm/dependence/.svn/tmp/
+tmsvm/lsa_src/.svn/prop-base/
+tmsvm/lsa_src/.svn/props/
+tmsvm/lsa_src/.svn/tmp/
+tmsvm/src/.svn/prop-base/
+tmsvm/src/.svn/props/
+tmsvm/src/.svn/tmp/
+tmsvm/tools/.svn/prop-base/
+tmsvm/tools/.svn/props/
+tmsvm/tools/.svn/tmp/
+web/
