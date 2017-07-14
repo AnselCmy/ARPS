@@ -5,8 +5,8 @@ import os
 import time
 import shutil
 import traceback
-from report_crawler.spiders._Global_function import get_localtime
-from report_crawler.spiders._Global_variable import REPORT_SAVEDIR
+from report_crawler.spiders.__Global_function import get_localtime
+from report_crawler.spiders.__Global_variable import REPORT_SAVEDIR
 
 now_time = get_localtime(time.strftime("%Y-%m-%d", time.localtime()))
 
@@ -32,17 +32,22 @@ class Spider_starter(object):
 			traceback.print_exc()
 
 	def X001(self):
-		self.run_spider('BNU001')
-		self.run_spider('BUAA001')
-		self.run_spider('ECNU001')
-		self.run_spider('NWPU001')
-		self.run_spider('NWSUAF001')
-		self.run_spider('SCU001')
-		self.run_spider('SDU001')
-		self.run_spider('SYSU001')
-		self.run_spider('THU001')
-		self.run_spider('UESTC001')
-		self.run_spider('WHU001')
+
+		spider_list = {
+			'B': ['BNU001', 'BUAA001'],
+			'C': ['CSU001'],
+			'E': ['ECNU001'],
+			'N': ['NKU001', 'NWPU001', 'NWSUAF001'],
+			'P': ['PKU001'],
+			'S': ['SCU001', 'SDU001', 'SEU001', 'SWU001', 'SYSU001'],
+			'T': ['THU001'],
+			'U': ['UESTC001'],
+			'W': ['WHU001']
+		}
+
+		for key in spider_list.keys():
+			for spider in spider_list[key]:
+				self.run_spider(spider)
 
 if __name__ == '__main__':
 	starter = Spider_starter()
