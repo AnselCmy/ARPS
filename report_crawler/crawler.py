@@ -37,6 +37,7 @@ class Spider_starter(object):
 		self.run_spider('ECNU001')
 		self.run_spider('NWPU001')
 		self.run_spider('NWSUAF001')
+		self.run_spider('PKU001')
 		self.run_spider('SCU001')
 		self.run_spider('SDU001')
 		self.run_spider('SYSU001')
