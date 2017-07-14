@@ -102,6 +102,11 @@ ENV/
 
 # mkdocs documentation
 /site
+<<<<<<< HEAD
+=======
+model/
+report_crawler/WHU001/
+>>>>>>> LJY
 title_model/
 tmsvm/dependence/.svn/props/
 tmsvm/dependence/.svn/tmp/
@@ -114,3 +119,7 @@ tmsvm/src/.svn/tmp/
 tmsvm/tools/.svn/prop-base/
 tmsvm/tools/.svn/props/
 tmsvm/tools/.svn/tmp/
+<<<<<<< HEAD
+=======
+web/
+>>>>>>> LJY
