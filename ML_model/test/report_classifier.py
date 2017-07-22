@@ -38,13 +38,13 @@ def classify():
     db = conn.get_database('report_db')
     col = db.get_collection('reports_without_label')
     new_col = db.get_collection('reports_with_label')
-    # Deal with each report
-    for c in col.find():
+    # Deal with reports which are not labeled
+    for c in col.find({'is_labeled': 0}):
         if check_contain_chinese(c['title']) and check_is_cs(c['faculty']):
             # Get label list by model
             new_label = model.predict_class_with_string([c['title']], labels)[0]
             # Set label to this report
-            col.update({'_id': c['_id']}, {'$set': {'label': new_label}})
+            col.update({'_id': c['_id']}, {'$set': {'label': new_label, 'click': 0, 'is_labeled': 1}})
             # Get the content by id
             new_doc = col.find({'_id': c['_id']})[0]
             # Delete the old id

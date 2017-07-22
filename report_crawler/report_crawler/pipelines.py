@@ -62,6 +62,8 @@ class ReportCrawlerPipeline(object):
         messages['link'] = item['link']
         messages['publication'] = item['publication']
         messages['location'] = item['location']
+        # Add the labeled status
+        messages['is_labeled'] = 0
 
         # get report start time
         reportTime = startTime(messages['publication'])
