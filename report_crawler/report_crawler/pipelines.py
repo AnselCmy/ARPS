@@ -103,7 +103,7 @@ class ReportCrawlerPipeline(object):
             f.write(str(text))
             
     def db_save(self, messages):
-        conn = pm.MongoClient('localhost', 27017)
+        conn = pm.MongoClient('192.168.1.2', 27017)
         db = conn.get_database('report_db')
         col = db.get_collection('reports_without_label')
         col.insert(messages)

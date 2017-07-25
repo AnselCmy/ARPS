@@ -38,12 +38,12 @@ def get_localtime(times):
 	return time_number
 
 
-def connect_db()
-	conn = pm.MongoClient('192.168.1.2', 27017)
+def connect_db():
+	conn = pm.MongoClient('localhost', 27017)
 	db = conn.get_database('report_db')
-	reports_col = db.get_collection('reports_without_label')
+	reports_col = db.get_collection('reports_with_label')
 	users_col = db.get_collection('users')
-	retunr reports_col, users_col
+	return reports_col, users_col
 
 
 def get_loc_list(loc):
@@ -62,10 +62,18 @@ def get_region(province):
 
 
 if __name__ == '__main__':
+	if len(sys.argv) > 1:
+		query = {'username':sys.argv[1]}
+	else:
+		query = {}
+		
 	now_time = get_localtime(time.strftime("%Y-%m-%d", time.localtime()))
-	for user in users_col.find():
+	reports_col, users_col = connect_db()
+	
+	for user in users_col.find(query):
 		p = user['province']
 		c = user['city']
+		reports_score = {}
 		# Get the location info of user
 		user_loc_list = [get_region(p), p, c]
 		for report in reports_col.find():
@@ -82,14 +90,7 @@ if __name__ == '__main__':
 					area_score = 1
 			# Get the total score
 			score = reduce(lambda x,y: x+y,
-			               map(lambda x:x[0]*x[1], zip(region_area_weight, zip(region_score, area_score))))
-			# Update the score in users_col
-			if not user.has_key('reports_score'):
-				reports_score = {}
-			else:
-				reports_score = user['reports_score']
-			new_reports_score = {user['_id'], score}
-			update_reports_score = dict(reports_score, **new_reports_score)
-			users_col.update({'_id': user['_id']},
-			                 {'$set': {'reports_score': update_reports_score}})
-	
+							map(lambda x:x[0]*x[1], zip(region_area_weight, [region_score, area_score])))
+			# Update the score
+			reports_score = dict(reports_score, **{report['_id'].__str__(): score})
+		users_col.update({'_id': user['_id']}, {'$set': {'reports_score': reports_score}})
